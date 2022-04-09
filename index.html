@@ -31,9 +31,21 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
+		 $(document).ready(function(){
+
+  $(".nav-link").click(function(){
+    $("#navToggler").addClass("collapsed");
+	 $("#navToggler").attr("aria-expanded",false);
+	 $("#navbarTogglerDemo02").removeClass("show");
+  });
+		 });
+</script>
 <style type="text/css">
 @font-face {
 font-family: "Blink Kiss";
@@ -46,7 +58,7 @@ url("/webfonts/BlinkKiss.svg#filename") format("svg");
 body{
 background:#8D5CBA;
 color:#ffffff;
-font-family: 'Work Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size:16px;
 font-weight: normal;
 font-style: normal;
@@ -445,26 +457,26 @@ padding-top:0 !important;
 }
 
 .tokenomics-container .tax-card{
-/* border:1px solid #FFDE59; */
+ border:4px solid #FCC875;
 border-radius:2em;
 max-width:480px;
 background:#3D2851;
 }
 
 .tokenomics-container .tax-title{
-color: transparent;
+color: #ffffff;
 font-weight: 600;
-line-height: 1;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #FFDE59;
-font-size:5em;
+line-height: 0.85;
+-webkit-text-stroke-width: 0px;
+-webkit-text-stroke-color: #ffffff;
+font-size:4em;
 font-weight:700;
 }
     
 .tokenomics-container .tax-title-2{
-color: #FFDE59;
+color: #ffffff;
 font-size: 1.5em;
-font-weight: 500;
+font-weight: 700;
 letter-spacing: 0;
 line-height: 1;
 }
@@ -594,6 +606,13 @@ padding:0;
 .nav-link{
 padding:12px;
 color:#FFFFFF !important;
+    text-transform:capitalize;
+    font-size:1.125em;
+    font-weight:500;
+}
+
+    .nav-link:hover, .nav-link:focus{
+color:#FCC875 !important;
 }
 
 .navbar-toggler-icon{
@@ -671,13 +690,13 @@ background: #C758BA;
 }
 </style>
 </head>
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark" id="#home">
 <div class="container">
 <a class="navbar-brand" href="#"><img class="img-fluid me-2" src="images/text-only.png" width="148px"></a>
-<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 <div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
 <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
 <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
@@ -701,17 +720,17 @@ background: #C758BA;
 
 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
-<h1 class="hero-title" data-aos="fade">SHIBAM!</h1>
-<p class="hero-description" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<h1 class="hero-title aos-init aos-animate" data-aos="fade">SHIBAM!</h1>
+<p class="hero-description aos-init aos-animate" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 <div class="d-flex flex-column flex-sm-row mt-3">
-<a type="button" class="d-none buy-button btn btn-primary m-2" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank" data-aos="fade">Buy On MMSwap</a>
-<a type="button" class="d-none telegram-button btn btn-primary m-2" href="https://t.me/crogo" target="_blank">Join Our Telegram</a><button class="pushable buy-pushable-button" data-aos="fade">
+<a type="button" class="d-none buy-button btn btn-primary m-2 aos-init aos-animate" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank" data-aos="fade">Buy On MMSwap</a>
+<a type="button" class="d-none telegram-button btn btn-primary m-2" href="https://t.me/crogo" target="_blank">Join Our Telegram</a><button class="pushable buy-pushable-button aos-init aos-animate" data-aos="fade">
   <span class="front">Buy On Pancakeswap</span>
-</button><button class="pushable telegram-pushable-button ms-sm-3 mt-3 mt-sm-0" data-aos="fade">
+</button><button class="pushable telegram-pushable-button ms-sm-3 mt-3 mt-sm-0 aos-init aos-animate" data-aos="fade">
   <span class="front">Join Our Telegram</span>
 </button>
 </div>
-</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5"><img class="img-fluid hero-img px-3" src="/images/logo-with-text.png" style="width:100%;" data-aos="fade">
+</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5"><img class="img-fluid hero-img px-3 aos-init aos-animate" src="/images/logo-with-text.png" style="width:100%;" data-aos="fade">
 
 
 
@@ -723,34 +742,35 @@ background: #C758BA;
 
 <section class="section about-section">
 <div id="about" class="section-container about-container container py-5 aos-animate aos-init">
-<h2 class="section-title about-title mt-4 text-center" data-aos="fade">ABOUT</h2>
-<div class="row mt-4">
+<h2 class="d-none section-title about-title mt-4 text-center aos-init aos-animate" data-aos="fade">ABOUT</h2>
+<img class="img-fluid mx-auto d-block mt-4" src="images/about.png" style="max-height:70px;">
+<div class="row mt-5">
 <div class="col-12 text-center">
-<p class="section-description about-description" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+<p class="section-description about-description aos-init aos-animate" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="section tokenomics-section">
+<section class="section tokenomics-section pt-5">
 <div id="tokenomics" class="section-container tokenomics-container container py-5 aos-init aos-animate" data-aos="fade">
-<h2 class="pt-4 section-title tokenomics-title text-center" data-aos="fade">TOKENOMICS</h2>
-<div class="row mt-4 mb-5">
+<h2 class="d-none pt-4 section-title tokenomics-title text-center aos-init aos-animate" data-aos="fade">TOKENOMICS</h2><img class="img-fluid mx-auto d-block" src="images/tokenomics.png" style="max-height:70px;">
+<div class="row mt-5 mb-4">
 
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center">Liquidity Pool</span><span class="tax-description text-center"></span>
 </div>
 </div>
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
 <span class="tax-title text-center mb-3">2%</span>
 <span class="tax-title-2 text-center">Development</span><span class="tax-description text-center"></span>
 </div>
 </div>
 <div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init aos-animate" data-aos="fade">
 <span class="tax-title text-center mb-3">8%</span>
 <span class="tax-title-2 text-center">Marketing</span><span class="tax-description text-center"></span>
 </div>
@@ -766,20 +786,21 @@ background: #C758BA;
 <section class="section roadmap-section">
 <div id="roadmap" class="section-container roadmap-container container py-5 aos-init aos-animate" data-aos="fade">
 <div class="text-center">
-<h2 class="section-title roadmap-title mt-4" data-aos="fade">ROADMAP</h2>
+<h2 class="d-none section-title roadmap-title mt-4 aos-init aos-animate" data-aos="fade">ROADMAP</h2>
+<img class="img-fluid mx-auto d-block mt-4" src="images/roadmap.png" style="max-height:70px;">
 </div>
-<div class="row mt-4 mb-4">
-<div class="col-12 col-lg-3 text-center py-3">
-<h4>PHASE 1</h4>
-<ul class="list-unstyled text-small text-center mt-3">
+<div class="row mt-5 mb-4">
+<div class="col-12 text-center py-3">
+<div class="row"><div class="col-6"><div class="ms-auto d-flex flex-column justify-content-center align-items-center" style="height:300px;width:300px;border:4px solid #FCC875;border-radius:50%;background:#3D2851"><h3 style="font-weight:700;font-size:2em;">PHASE 1</h3></div></div>
+<div class="col-6"><ul class="list-unstyled text-small text-center mt-3">
 <li>Stealth launch Shiba Milk on Milkomeda<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 <li>Telegram made<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 <li>Website Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 <li>Stickers made</li>
 <li>Organic and community growth</li>
-</ul>
-</div>
-<div class="col-12 col-lg-3 text-center py-3">
+</ul></div>
+</div></div>
+<div class="col-12 text-center py-3">
 <h4>PHASE 2</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 
@@ -792,7 +813,7 @@ background: #C758BA;
 
 </ul>
 </div>
-<div class="col-12 col-lg-3 text-center py-3">
+<div class="col-12 text-center py-3">
 <h4>PHASE 3</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>Trending Dexscreener</li>
@@ -802,7 +823,7 @@ background: #C758BA;
 
 </ul>
 </div>
-<div class="col-12 col-lg-3 text-center py-3">
+<div class="col-12 text-center py-3">
 <h4>PHASE 3</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>Trending Dexscreener</li>
@@ -831,18 +852,7 @@ background: #C758BA;
 
 
 
-<section class="section swap-section">
-<div class="section-container swap-container container py-5 aos-init" data-aos="fade">
-<div class="text-center">
-<h2 class="section-title swap-title mt-4 mb-4" data-aos="fade">SWAP HERE</h2>
-</div>
-<div class="row mb-4">
-<div class="col-12">
-<iframe class="d-block mx-auto" src="https://app.bogged.finance/cro/swap?chain=cronos&amp;tokenIn=CRO&amp;tokenOut=0x7be290f190A88380b56D5a16D54684befbdee154&amp;embed=1&amp;theme=light" height="480" style="border-radius:12px;max-width:576px;width:100%;" data-aos="fade"></iframe>
-</div>
-</div>
-</div>
-</section>
+
 </main>
 
 <footer class="footer-section">
@@ -855,9 +865,9 @@ background: #C758BA;
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Reddit</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Instagram</a></li>
 <li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Facebook</a></li>
-<li><a class="text-decoration-none" href="https://twitter.com/crogoofficial" target="_blank" rel="nofollow">Twitter</a></li>
-<li><a class="text-decoration-none" href="https://dexscreener.com/cronos/0xc544477dea39cd64cf7f417cbcceab77cfdfde12" target="_blank" rel="nofollow">DEXScreener</a></li>
-<li><a class="text-decoration-none" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank" rel="nofollow">MM.Finance</a></li>
+<li class="d-none"><a class="text-decoration-none" href="https://twitter.com/crogoofficial" target="_blank" rel="nofollow">Twitter</a></li>
+<li><a class="text-decoration-none" href="https://dexscreener.com/milkomedacardano/0x6c05be17e6c537dcbb202b0ea3ad90e9e5e061f7" target="_blank" rel="nofollow">DEX Screener</a></li>
+<li><a class="text-decoration-none" href="https://www.milkyswap.exchange/swap?outputCurrency=0x57b2f1eb603ab3871f3f99066d1deec7ab0bdeaa" target="_blank" rel="nofollow">Milkyswap</a></li>
 </ul>
 </div>
 </div>
@@ -897,5 +907,6 @@ AOS.init({
 
 });
 </script>
+
 
 </body></html>
