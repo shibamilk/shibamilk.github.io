@@ -1,0 +1,762 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+<title>Home Page | Crogo</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CROGO is a community-driven token on Cronos Chain. We're planning to build a network of ATM’s so our holders have access to Cash whenever and wherever.">
+<meta name="keywords" content="crogo,bitcoin,dogecoin,doge,defi,coinbase,coinmarketcap,coinmarket,bscscan,whitebit,coingecko,cryptocurrency,crypto,pancakeswap,dex,etherium,eth,btc">
+<meta property="og:title" content="Crogo">
+<meta property="og:url" content="https://crogogithub.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:description" content="CROGO is a community-driven token on Cronos Chain. We're planning to build a network of ATM’s so our holders have access to Cash whenever and wherever.">
+<meta property="og:image" content="/images/crogo-logo-2.jpg">
+<link rel="shortcut icon" type="image/png" href="/images/favicon.ico">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="840">
+<meta property="og:image:height" content="840">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="CROGO is a community-driven token on Cronos Chain. We're planning to build a network of ATM’s so our holders have access to Cash whenever and wherever.">
+<meta name="twitter:title" content="Crogo">
+<meta name="twitter:site" content="@crogoofficial">
+<meta name="twitter:url" content="">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link href="css/uicons-regular-rounded.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+<style type="text/css">
+body{
+background:#00A1FE;
+color:#ffffff;
+font-family: 'M Plus Rounded 1C', sans-serif;
+font-weight:400;
+font-size:16px;
+}
+	
+*:focus{
+box-shadow:none !important;
+outline: 0 !important;
+}
+    
+.container{
+max-width:1140px;
+padding-left: 16px;
+padding-right: 16px;
+}
+    
+/* BUBBLE BACKGROUND */
+
+    #background-wrap {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+/* KEYFRAMES */
+
+@-webkit-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-moz-keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@-moz-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x2 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x3 {
+    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.x4 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x5 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+.x6 {
+    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 50%;
+	top: 0;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.x7 {
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 65%;
+	top: 70%;
+	
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+}
+
+.x8 {
+    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+.x9 {
+    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 90%;
+	top: 50%;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+}
+
+.x10 {
+    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 80%;
+	
+	-webkit-transform: scale(0.3);
+	-moz-transform: scale(0.3);
+	transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    /*-webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	*/
+    height: 200px;
+	position: absolute;
+	width: 200px;
+}
+
+.bubble:after {
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	
+    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+	
+	content: "";
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+
+/* HEADER */
+
+.navbar-brand{
+font-size:1.75em;
+font-weight:700;
+color:#000000 !important;
+letter-spacing:-0.04em;
+}
+
+.navbar{
+padding:12px 0;
+}
+	
+.nav-link{
+color:#FFDE59 !important;
+font-size:20px;
+letter-spacing:0em;
+    font-weight:500;
+}
+
+/* ---------------- */
+
+/* HERO CONTAINER */
+
+.hero-container{
+height:calc(100vh - 64px);
+min-height:calc(640px - 78px);
+}
+	
+.hero-container .hero-title{
+font-weight:700;
+font-size:3em;;
+letter-spacing:0px;
+}
+
+.hero-container .hero-description{
+font-size:1.25em;
+}
+
+.hero-container .buy-button{
+color: #FFFFF;
+background-color: #73D672;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border: solid 1px #73D672;
+border-radius:2em;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+font-size:1.125em;
+}
+
+.hero-container .buy-button:hover, .hero-container .buy-button:focus{
+background-color: #73D672 !important;
+color:#FFFFFF !important;
+border: solid 1px #73D672 !important;
+}
+
+.hero-container .telegram-button{
+color: #FFFFFF;
+background-color: #FFDE59;
+border-color: #3665B7;
+position: relative;
+z-index: 1;
+overflow: hidden;
+border: solid 1px #FFDE59;
+border-radius:2em;
+padding:16px 20px;
+font-weight:700;
+letter-spacing:0px;
+font-size:1.125em;
+}
+
+.hero-container .telegram-button:hover, .hero-container .telegram-button:focus{
+background-color: #FFDE597 !important;
+color:#FFFFFF !important;
+border: solid 1px #FFDE59 !important;
+}
+
+/* ---------------- */
+
+/* SECTION CLASS */
+
+.section{
+}
+
+.section-container{
+color:#ffffff;
+}
+
+.section-title{
+font-size:2.5em;
+font-weight:700;
+}
+
+/* ---------------- */
+
+/* ABOUT SECTION */
+
+.about-section{
+}
+
+.about-container{
+color:#ffffff;
+padding-bottom:0 !important;
+}
+
+.about-container .about-title{
+font-size:2.5em;
+font-weight:700;
+text-shadow: 2px 2px #73D672;
+}
+
+.about-container .about-description{
+}
+
+/* ---------------- */
+
+/* TOKENOMICS SECTION */
+
+.tokenomics-section{
+}
+
+.tokenomics-container{
+color:#ffffff;
+padding-top:0 !important;
+}
+
+.tokenomics-container .tokenomics-title{
+font-size:2.5em;
+font-weight:700;
+    text-shadow: 2px 2px #73D672;
+}
+
+.tokenomics-container .tokenomics-description{
+}
+
+.tokenomics-container .tax-card{
+border:1px solid #FFDE59;
+border-radius:2em;
+max-width:520px;
+}
+
+.tokenomics-container .tax-title{
+color: transparent;
+font-weight: 600;
+line-height: 1;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #FFDE59;
+font-size:2.25em;
+font-weight:700;
+}
+
+.tokenomics-container .tax-description{
+font-size:1em;
+font-weight:400;
+}
+
+/* ---------------- */
+
+/* ROADMAP SECTION */ 
+
+.roadmap-section{
+}
+	
+.roadmap-container{
+color:#ffffff;
+}
+
+.roadmap-container ul > li{
+margin-bottom:4px;
+margin-top:4px;
+}
+
+.roadmap-container .roadmap-title{
+font-size:2.5em;
+font-weight:700;
+text-shadow: 2px 2px #73D672;
+}
+    
+/* ---------------- */
+
+/* SWAP SECTION */ 
+
+.swap-section{
+}
+	
+.swap-container{
+color:#ffffff;
+}
+
+.swap-container .swap-title{
+font-size:2.5em;
+font-weight:700;
+text-shadow: 2px 2px #73D672;
+}
+    
+/* ---------------- */
+
+/* FOOTER SECTION */
+
+.footer-section{
+}
+
+.footer-container{
+color:#ffffff;
+}
+
+.footer-container ul > li{
+display: inline-block;
+zoom:1;
+margin-left:10px;
+margin-right:10px;
+margin-bottom:8px;
+}
+
+.footer-container a{
+color:#FFFFFF;
+font-size:1.25em;
+font-weight:500;
+}
+
+/* ---------------- */
+	
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 992px){
+.hero-container .hero-description{
+font-size:1.5em;
+}
+
+.hero-container .hero-title{
+font-weight:900;
+font-size:5em;
+letter-spacing:0px;
+}
+    
+.navbar-expand-lg .navbar-nav .nav-link {
+padding-right: 1.125rem;
+padding-left: 1.125rem;	
+}
+
+.navbar-expand-lg .navbar-nav .nav-item:last-child > .nav-link{
+padding-right: 0rem !important;
+}
+}
+
+@media (min-width: 1200px){
+}
+
+@media (min-width: 1400px){
+}
+</style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark py-3" id="#home">
+<div class="container">
+<a class="navbar-brand d-none" href="#"><img class="img-fluid me-2" width="50px" src=""></a>
+<button class="navbar-toggler ms-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item text-center"><a class="nav-link" aria-current="page" href="#home">HOME</a></li>
+<li class="nav-item text-center"><a class="nav-link" href="#about">ABOUT</a></li><li class="nav-item text-center"><a class="nav-link" href="#tokenomics">TOKENOMICS</a></li>
+<li class="nav-item text-center"><a class="nav-link" href="#roadmap">ROADMAP</a></li>
+<li class="nav-item text-center"><a class="nav-link" href="#platforms">PLATFORMS</a></li><li class="nav-item text-center"><a class="nav-link" href="#swap">SWAP</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+<main>
+    
+<section>
+<div id="background-wrap">
+<div class="bubble x1"></div>
+<div class="bubble x2"></div>
+<div class="bubble x3"></div>
+<div class="bubble x4"></div>
+<div class="bubble x5"></div>
+<div class="bubble x6"></div>
+<div class="bubble x7"></div>
+<div class="bubble x8"></div>
+<div class="bubble x9"></div>
+<div class="bubble x10"></div>
+</div>    
+</section>
+    
+<section class="hero-section">
+<div class="hero-container container py-5 d-flex flex-column justify-content-center align-items-center aos-init aos-animate" data-aos="fade-up">
+<div class="row">
+
+<div class="col-12 d-flex flex-column justify-content-center align-items-center"><img class="img-fluid hero-img px-3" src="images/crogo-logo-revamped.png" width="420px">
+
+<h1 class="hero-title text-center mt-5"><span style="color:#73D672">Cro</span> on the <span style="color:#FFDE59">Go</span>!</h1>
+<p class="hero-description my-4 text-center d-none">Cro on the Go</p>
+<div class="d-flex flex-column flex-sm-row mt-2 button-">
+<a type="button" class="buy-button btn btn-primary m-2" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank">Buy On MMSwap</a>
+<a type="button" class="telegram-button btn btn-primary m-2" href="https://t.me/crogo" target="_blank">Join Our Telegram</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section about-section">
+<div id="about" class="section-container about-container container py-5 aos-init" data-aos="fade-up">
+<h2 class="section-title about-title mt-4 text-center">ABOUT</h2>
+<div class="row mt-4">
+<div class="col-12 text-center">
+<p class="section-description about-description">CROGO is a community-driven token on Cronos Chain. We're planning to build a network of ATM’s so our holders have access to Cash whenever and wherever.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section tokenomics-section">
+<div id="tokenomics" class="section-container tokenomics-container container py-5 aos-init" data-aos="fade-up">
+<h2 class="pt-4 section-title tokenomics-title text-center">TOKENOMICS</h2>
+<div class="row mt-4 mb-5">
+
+<div class="col-12 col-lg-4 mb-4 ms-auto">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto">
+<span class="tax-title text-center mb-3">10% Marketing</span>
+<span class="tax-description text-center">10% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-4 me-auto">
+<div class="tax-card d-flex flex-column justify-content-center align-items-center px-3 py-5 h-100 mx-auto">
+<span class="tax-title text-center mb-3">2% Liquidity</span>
+<span class="tax-description text-center">2% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<section class="section roadmap-section">
+<div id="roadmap" class="section-container roadmap-container container py-5 aos-init" data-aos="fade-up">
+<div class="text-center">
+<h2 class="section-title roadmap-title mt-4">ROADMAP</h2>
+</div>
+<div class="row mt-4 mb-4">
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>PHASE 1</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Initial Marketing Campaign<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>MM Fair Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>LP Lock Extension<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Community ‘’Cruck Races’’<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+</ul>
+</div>
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>PHASE 2</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+
+
+<li>Website V1 Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFDE59" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Community Shilling</li>
+<li>Coin Listing Sites</li>
+<li>Telegram and Twitter Calls</li>
+<li>Crogo Swag Creation</li>
+
+</ul>
+</div>
+<div class="col-12 col-lg-4 text-center py-3">
+<h4>PHASE 3</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Crogo ATM’s Launch</li>
+<li>Crogo Utility Expansion</li>
+<li>Massive Marketing Campaign</li>
+<li>Coingecko Listing</li>
+<li>Coinmarketcap Listing</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section swap-section">
+<div class="section-container swap-container container py-5 aos-init" data-aos="fade-up">
+<div class="text-center">
+<h2 class="section-title swap-title mt-4 mb-4">PLATFORMS</h2>
+</div>
+<div class="row mb-4">
+<div class="col-12 text-center">
+<img style="border-radius:12px;" class="img-fluid" src="images/cash-money-coming-soon.jpg" width="420px"><h3 class="mt-3" style="font-size:2em;">Crogo ATM</h3><button style="border-radius:12px; color:#FFDE59;font-size:1em;border:1px solid #FFDE59;background:transparent;font-weight:700;" class="px-3 py-2 mt-2">Coming Soon</button>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="section swap-section">
+<div class="section-container swap-container container py-5 aos-init" data-aos="fade-up">
+<div class="text-center">
+<h2 class="section-title swap-title mt-4 mb-4">SWAP HERE</h2>
+</div>
+<div class="row mb-4">
+<div class="col-12">
+<iframe class="d-block mx-auto" src="https://app.bogged.finance/cro/swap?chain=cronos&amp;tokenIn=CRO&amp;tokenOut=0x7be290f190A88380b56D5a16D54684befbdee154&amp;embed=1&amp;theme=light" height="480" style="border-radius:12px;max-width:576px;width:100%;"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="footer-section">
+<div class="footer-container container py-5">
+<div class="row mt-4">
+<div class="col-12 d-flex flex-column justify-content-center align-items-center">
+<ul class="list-unstyled text-small text-center">
+<li><a class="text-decoration-none mb-1" href="https://t.me/crogo" target="_blank" rel="nofollow">Telegram</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Discord</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Reddit</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Instagram</a></li>
+<li class="d-none"><a class="text-decoration-none" href="#" target="_blank" rel="nofollow">Facebook</a></li>
+<li><a class="text-decoration-none" href="https://twitter.com/crogoofficial" target="_blank" rel="nofollow">Twitter</a></li>
+<li><a class="text-decoration-none" href="https://dexscreener.com/cronos/0xc544477dea39cd64cf7f417cbcceab77cfdfde12" target="_blank" rel="nofollow">DEXScreener</a></li>
+<li><a class="text-decoration-none" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank" rel="nofollow">MM.Finance</a></li>
+</ul>
+</div>
+</div>
+<div class="row mt-5">
+<div class="col"><p class="text-center m-0">Copyright © 2022 | All Rights Reserved</p></div>
+</div>
+</div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+		AOS.init();
+		AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+</body></html>
