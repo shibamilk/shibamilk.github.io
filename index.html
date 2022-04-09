@@ -445,9 +445,10 @@ padding-top:0 !important;
 }
 
 .tokenomics-container .tax-card{
-border:1px solid #FFDE59;
+/* border:1px solid #FFDE59; */
 border-radius:2em;
-max-width:520px;
+max-width:480px;
+background:#3D2851;
 }
 
 .tokenomics-container .tax-title{
@@ -456,10 +457,18 @@ font-weight: 600;
 line-height: 1;
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: #FFDE59;
-font-size:2.25em;
+font-size:5em;
 font-weight:700;
 }
-
+    
+.tokenomics-container .tax-title-2{
+color: #FFDE59;
+font-size: 1.5em;
+font-weight: 500;
+letter-spacing: 0;
+line-height: 1;
+}
+    
 .tokenomics-container .tax-description{
 font-size:1em;
 font-weight:400;
@@ -506,7 +515,7 @@ text-shadow: 2px 2px #73D672;
 /* FOOTER SECTION */
 
 .footer-section{
-background:#2C1D3B;
+background:#3D2851;
 }
 
 .footer-container{
@@ -673,6 +682,7 @@ background: #C758BA;
 <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
 <li class="nav-item"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
 <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
 
 </ul>
@@ -689,19 +699,19 @@ background: #C758BA;
 <div class="hero-container container py-5 aos-init aos-animate" data-aos="fade-up">
 <div class="row">
 
-<div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+<div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
 
-<h1 class="hero-title">Shiba Milk</h1>
-<p class="hero-description my-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<div class="d-flex flex-column flex-sm-row mt-2 button-">
-<a type="button" class="d-none buy-button btn btn-primary m-2" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank">Buy On MMSwap</a>
-<a type="button" class="d-none telegram-button btn btn-primary m-2" href="https://t.me/crogo" target="_blank">Join Our Telegram</a><button class="pushable buy-pushable-button m-2">
+<h1 class="hero-title" data-aos="fade">SHIBAM!</h1>
+<p class="hero-description" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="d-flex flex-column flex-sm-row mt-3">
+<a type="button" class="d-none buy-button btn btn-primary m-2" href="https://mm.finance/swap?outputCurrency=0x7be290f190a88380b56d5a16d54684befbdee154" target="_blank" data-aos="fade">Buy On MMSwap</a>
+<a type="button" class="d-none telegram-button btn btn-primary m-2" href="https://t.me/crogo" target="_blank">Join Our Telegram</a><button class="pushable buy-pushable-button" data-aos="fade">
   <span class="front">Buy On Pancakeswap</span>
-</button><button class="pushable telegram-pushable-button m-2">
+</button><button class="pushable telegram-pushable-button ms-sm-3 mt-3 mt-sm-0" data-aos="fade">
   <span class="front">Join Our Telegram</span>
 </button>
 </div>
-</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5"><img class="img-fluid hero-img px-3" src="/images/logo-with-text.png" style="width:100%;">
+</div><div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center py-5"><img class="img-fluid hero-img px-3" src="/images/logo-with-text.png" style="width:100%;" data-aos="fade">
 
 
 
@@ -712,11 +722,11 @@ background: #C758BA;
 </section>
 
 <section class="section about-section">
-<div id="about" class="section-container about-container container py-5 aos-init aos-animate" data-aos="fade">
-<h2 class="section-title about-title mt-4 text-center">ABOUT</h2>
+<div id="about" class="section-container about-container container py-5 aos-animate aos-init">
+<h2 class="section-title about-title mt-4 text-center" data-aos="fade">ABOUT</h2>
 <div class="row mt-4">
 <div class="col-12 text-center">
-<p class="section-description about-description">CROGO is a community-driven token on Cronos Chain. We're planning to build a network of ATM’s so our holders have access to Cash whenever and wherever.</p>
+<p class="section-description about-description" data-aos="fade">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 </div>
 </div>
 </div>
@@ -724,21 +734,28 @@ background: #C758BA;
 
 <section class="section tokenomics-section">
 <div id="tokenomics" class="section-container tokenomics-container container py-5 aos-init aos-animate" data-aos="fade-up">
-<h2 class="pt-4 section-title tokenomics-title text-center">TOKENOMICS</h2>
+<h2 class="pt-4 section-title tokenomics-title text-center" data-aos="fade">TOKENOMICS</h2>
 <div class="row mt-4 mb-5">
 
-<div class="col-12 col-lg-4 mb-4 ms-auto">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-3 py-5 mx-auto">
-<span class="tax-title text-center mb-3">10%</span>
-<span class="tax-description text-center">10% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
+<div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<span class="tax-title text-center mb-3">2%</span>
+<span class="tax-title-2 text-center">Liquidity Pool</span><span class="tax-description text-center"></span>
 </div>
 </div>
-<div class="col-12 col-lg-4 mb-4 me-auto">
-<div class="tax-card d-flex flex-column justify-content-center align-items-center px-3 py-5 h-100 mx-auto">
-<span class="tax-title text-center mb-3">2% Liquidity</span>
-<span class="tax-description text-center">2% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
+<div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<span class="tax-title text-center mb-3">2%</span>
+<span class="tax-title-2 text-center">Development</span><span class="tax-description text-center"></span>
 </div>
 </div>
+<div class="col-12 col-lg-4 mb-4">
+<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto" data-aos="fade">
+<span class="tax-title text-center mb-3">8%</span>
+<span class="tax-title-2 text-center">Marketing</span><span class="tax-description text-center"></span>
+</div>
+</div>
+
 
 </div>
 </div>
@@ -747,9 +764,9 @@ background: #C758BA;
 
 
 <section class="section roadmap-section">
-<div id="roadmap" class="section-container roadmap-container container py-5 aos-init" data-aos="fade-up">
+<div id="roadmap" class="section-container roadmap-container container py-5 aos-init aos-animate" data-aos="fade-up">
 <div class="text-center">
-<h2 class="section-title roadmap-title mt-4">ROADMAP</h2>
+<h2 class="section-title roadmap-title mt-4" data-aos="fade">ROADMAP</h2>
 </div>
 <div class="row mt-4 mb-4">
 <div class="col-12 col-lg-3 text-center py-3">
@@ -799,8 +816,8 @@ background: #C758BA;
 </div>
 </section>
 
-<section class="section swap-section">
-<div class="section-container swap-container container py-5 aos-init" data-aos="fade-up">
+<section class="section swap-section d-none">
+<div class="section-container swap-container container py-5 aos-init aos-animate" data-aos="fade-up">
 <div class="text-center">
 <h2 class="section-title swap-title mt-4 mb-4">PLATFORMS</h2>
 </div>
@@ -817,11 +834,11 @@ background: #C758BA;
 <section class="section swap-section">
 <div class="section-container swap-container container py-5 aos-init" data-aos="fade-up">
 <div class="text-center">
-<h2 class="section-title swap-title mt-4 mb-4">SWAP HERE</h2>
+<h2 class="section-title swap-title mt-4 mb-4" data-aos="fade">SWAP HERE</h2>
 </div>
 <div class="row mb-4">
 <div class="col-12">
-<iframe class="d-block mx-auto" src="https://app.bogged.finance/cro/swap?chain=cronos&amp;tokenIn=CRO&amp;tokenOut=0x7be290f190A88380b56D5a16D54684befbdee154&amp;embed=1&amp;theme=light" height="480" style="border-radius:12px;max-width:576px;width:100%;"></iframe>
+<iframe class="d-block mx-auto" src="https://app.bogged.finance/cro/swap?chain=cronos&amp;tokenIn=CRO&amp;tokenOut=0x7be290f190A88380b56D5a16D54684befbdee154&amp;embed=1&amp;theme=light" height="480" style="border-radius:12px;max-width:576px;width:100%;" data-aos="fade"></iframe>
 </div>
 </div>
 </div>
